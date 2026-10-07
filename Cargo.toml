@@ -1,0 +1,21 @@
+[package]
+name = "turkish-neural-tts"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.88"
+license = "Apache-2.0"
+description = "Offline Turkish and English neural text to speech in Rust: EMA Lightning and Kokoro-82M on ONNX Runtime, with pronunciation rules for Turkish workplace text."
+repository = "https://github.com/sewox/turkish-neural-tts"
+readme = "README.md"
+keywords = ["tts", "turkish", "text-to-speech", "onnx", "kokoro"]
+categories = ["multimedia::audio"]
+include = ["src/**", "resources/**", "examples/**", "README.md", "LICENSE", "NOTICE"]
+
+[dependencies]
+ndarray = "0.17"
+normalizer-tr = "0.4"
+ort = { version = "=2.0.0-rc.13", default-features = false, features = ["ndarray", "download-binaries", "tls-rustls", "std"] }
+regex = "1.10"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+unicode-normalization = "0.1"
