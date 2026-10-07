@@ -61,7 +61,7 @@ const TURKISH_ACRONYMS: &[&str] = &[
     "KVKK", "SGK", "SSK", "KDV", "ÖTV", "TBMM", "AB", "ABD", "TL", "İK", "TC", "TCMB", "SPK",
     "BDDK", "MEB", "YÖK", "PTT", "THY", "TRT", "AVM", "İSO", "İTO", "TOBB", "TÜİK", "BİST", "MHRS",
     "EFT", "TCKN", "VKN", "KEP", "İBB", "ABB", "AKP", "CHP", "MHP", "HDP", "TSK", "MİT", "SGM",
-    "YKS", "LGS", "KPSS", "ALES", "YDS", "TMSF", "EPDK", "BTK", "GİB", "MERSİS", "KOBİ",
+    "YKS", "LGS", "KPSS", "ALES", "YDS", "TMSF", "EPDK", "BTK", "GİB",
 ];
 
 /// Acronyms said as a word; left as written.
@@ -407,6 +407,33 @@ mod tests {
 
     fn p(text: &str) -> String {
         prepare(text, &Hints::default())
+    }
+
+    #[test]
+    fn lists_are_consistent() {
+        let mut seen = HashSet::new();
+        for (term, reading) in DEFAULT_LEXICON {
+            assert_eq!(*term, term.to_lowercase(), "{term}: keys are lowercase");
+            assert_eq!(
+                *reading,
+                reading.to_lowercase(),
+                "{term}: readings are lowercase"
+            );
+            assert!(seen.insert(term.to_string()), "{term} is listed twice");
+        }
+        let acronyms = ACRONYM_LEXICON
+            .iter()
+            .map(|(t, _)| *t)
+            .chain(TURKISH_ACRONYMS.iter().copied())
+            .chain(WORD_ACRONYMS.iter().copied());
+        for term in acronyms {
+            assert_eq!(
+                term,
+                term.to_uppercase(),
+                "{term}: acronyms are in capitals"
+            );
+            assert!(seen.insert(term.to_lowercase()), "{term} is listed twice");
+        }
     }
 
     #[test]
