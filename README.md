@@ -135,7 +135,14 @@ yazıldı, ONNX Runtime üzerinde çalışıyor; Python ya da espeak gerektirmiy
   KVKK → *ka ve ka ka*, SQL → *si ku el*. Kendi okunuşlarınızı da
   ekleyebilirsiniz. Ayrıntılar: [docs/pronunciation.md](docs/pronunciation.md).
 
-Daha iyi okunuş önerilerinizi pull request olarak bekliyoruz.
+Okunuş önerilerinizi [formla](https://github.com/sewox/turkish-neural-tts/issues/new?template=pronunciation.yml) ya da pull request olarak bekliyoruz; nasıl yapılacağı [CONTRIBUTING.md](CONTRIBUTING.md) içinde.
+
+## Contributing
+
+Better readings are the most welcome contribution. Suggest one with the
+[pronunciation form](https://github.com/sewox/turkish-neural-tts/issues/new?template=pronunciation.yml),
+or send a pull request; [CONTRIBUTING.md](CONTRIBUTING.md) shows where each
+kind of term goes and what to check.
 
 ## Thanks and licenses
 

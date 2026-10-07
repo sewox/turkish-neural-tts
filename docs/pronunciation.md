@@ -65,7 +65,7 @@ aloud. A word is only treated as English when its spelling could be English
 
 ### Turkish acronyms (Turkish letter names)
 
-KVKK, SGK, SSK, KDV, ÖTV, TBMM, AB, ABD, TL, İK, TC, TCMB, SPK, BDDK, MEB, YÖK, PTT, THY, TRT, AVM, İSO, İTO, TOBB, TÜİK, BİST, MHRS, EFT, TCKN, VKN, KEP, İBB, ABB, AKP, CHP, MHP, HDP, TSK, MİT, SGM, YKS, LGS, KPSS, ALES, YDS, TMSF, EPDK, BTK, GİB, MERSİS, KOBİ
+KVKK, SGK, SSK, KDV, ÖTV, TBMM, AB, ABD, TL, İK, TC, TCMB, SPK, BDDK, MEB, YÖK, PTT, THY, TRT, AVM, İSO, İTO, TOBB, TÜİK, BİST, MHRS, EFT, TCKN, VKN, KEP, İBB, ABB, AKP, CHP, MHP, HDP, TSK, MİT, SGM, YKS, LGS, KPSS, ALES, YDS, TMSF, EPDK, BTK, GİB
 
 ### Acronyms said as a word
 

@@ -1,0 +1,38 @@
+name: Pronunciation suggestion / Okunuş önerisi
+description: A word the voice reads wrong, or that your team says differently.
+labels: [pronunciation]
+body:
+  - type: input
+    id: term
+    attributes:
+      label: Term / Terim
+      placeholder: Kubernetes
+    validations:
+      required: true
+  - type: input
+    id: now
+    attributes:
+      label: How it is read now / Şu an nasıl okunuyor
+      placeholder: kubernetes
+  - type: input
+    id: expected
+    attributes:
+      label: How it should be said / Nasıl okunmalı
+      description: In Turkish spelling. / Türkçe yazımla.
+      placeholder: kubernetis
+    validations:
+      required: true
+  - type: dropdown
+    id: voice
+    attributes:
+      label: Voice / Ses
+      options:
+        - Turkish / Türkçe (EMA Lightning)
+        - English / İngilizce (Kokoro)
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / Bağlam
+      description: Where is it said this way? A sample sentence helps. / Nerede böyle söyleniyor? Örnek bir cümle yardımcı olur.
