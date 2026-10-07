@@ -4,17 +4,19 @@ Copyright 2026 the EchoMind authors
 This project builds on the work of others:
 
 EMA Lightning — Turkish text to speech model and reference engine
-  Copyright Canberk Aslan. Apache License 2.0.
+  Copyright Canberk Aslan (https://github.com/canberk7). Apache License 2.0.
   https://github.com/canberk7/ema-lightning
   https://huggingface.co/canberkkkkkk/ema-lightning
   The ONNX files in the releases are an export of its weights
   (revision 7a6ba1ad216bb2f1da9863f80ac8770a6a807632); src/ema.rs and
   src/frontend.rs port parts of its engine, frontend and chunker.
 
-normalizer-tr — Turkish text normalizer, by Erdem Tuna. Apache License 2.0.
+normalizer-tr — Turkish text normalizer, by Erdem Tuna
+  (https://github.com/erdemtuna). Apache License 2.0.
   https://github.com/erdemtuna/normalizer-tr
 
-Kokoro-82M — English text to speech model, by hexgrad. Apache License 2.0.
+Kokoro-82M — English text to speech model, by hexgrad
+  (https://github.com/hexgrad). Apache License 2.0.
   https://huggingface.co/hexgrad/Kokoro-82M
   ONNX build: https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX
 
@@ -24,4 +26,5 @@ misaki — G2P for Kokoro, by hexgrad. Apache License 2.0.
   us_gold.json and us_silver.json, which are downloaded, not included.
 
 CMU Pronouncing Dictionary — Carnegie Mellon University. BSD 2-Clause.
+  http://www.speech.cs.cmu.edu/cgi-bin/cmudict
   resources/cmudict.txt is a trimmed copy; see resources/CMUDICT_LICENSE.

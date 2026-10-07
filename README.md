@@ -122,8 +122,14 @@ timeline against the Python engine's output.
 Türkçe ve İngilizce için çevrimdışı, doğal sesli metin okuma. Rust ile
 yazıldı, ONNX Runtime üzerinde çalışıyor; Python ya da espeak gerektirmiyor.
 
-- **Türkçe:** EMA Lightning, ONNX'e aktarılmış hâliyle.
-- **İngilizce:** Kokoro-82M; Türkçe isimleri de doğru okur.
+- **Türkçe:** [Canberk Aslan](https://github.com/canberk7)'ın
+  [EMA Lightning](https://github.com/canberk7/ema-lightning) modeli, ONNX'e
+  aktarılmış hâliyle. Sayı, tarih ve semboller
+  [Erdem Tuna](https://github.com/erdemtuna)'nın
+  [normalizer-tr](https://github.com/erdemtuna/normalizer-tr) kütüphanesiyle okunur.
+- **İngilizce:** [hexgrad](https://github.com/hexgrad)'ın
+  [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) modeli ve
+  [misaki](https://github.com/hexgrad/misaki) sözlükleri; Türkçe isimleri de doğru okur.
 - **Okunuş kuralları:** iş yerinde kullanılan İngilizce terimler, marka adları
   ve kısaltmalar alışılmış biçimde okunur: Python → *paytın*, Docker → *dakır*,
   KVKK → *ka ve ka ka*, SQL → *si ku el*. Kendi okunuşlarınızı da
@@ -135,14 +141,25 @@ Daha iyi okunuş önerilerinizi pull request olarak bekliyoruz.
 
 This repository is Apache-2.0 ([LICENSE](LICENSE)). It stands on:
 
-- **EMA Lightning** by Canberk Aslan, Apache-2.0: the Turkish model; the ONNX
-  files are an export of its weights, and the Rust engine ports parts of its
-  reference engine.
-- **normalizer-tr** by Erdem Tuna, Apache-2.0: Turkish numbers, dates and
-  symbols in spoken form.
-- **Kokoro-82M** by hexgrad, Apache-2.0: the English model.
-- **misaki** by hexgrad, Apache-2.0: the English G2P ported here.
-- **CMU Pronouncing Dictionary**, BSD 2-Clause: English words respelled for
-  the Turkish voice ([resources/CMUDICT_LICENSE](resources/CMUDICT_LICENSE)).
+- **[EMA Lightning](https://github.com/canberk7/ema-lightning)** by
+  [Canberk Aslan](https://github.com/canberk7), Apache-2.0
+  ([model on Hugging Face](https://huggingface.co/canberkkkkkk/ema-lightning)):
+  the Turkish model; the ONNX files are an export of its weights, and the Rust
+  engine ports parts of its reference engine.
+- **[normalizer-tr](https://github.com/erdemtuna/normalizer-tr)** by
+  [Erdem Tuna](https://github.com/erdemtuna), Apache-2.0: Turkish numbers,
+  dates and symbols in spoken form.
+- **[Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M)** by
+  [hexgrad](https://github.com/hexgrad), Apache-2.0: the English model
+  ([ONNX build](https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX)
+  by onnx-community).
+- **[misaki](https://github.com/hexgrad/misaki)** by
+  [hexgrad](https://github.com/hexgrad), Apache-2.0: the English G2P ported
+  here.
+- **[CMU Pronouncing Dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict)**,
+  Carnegie Mellon University, BSD 2-Clause: English words respelled for the
+  Turkish voice ([resources/CMUDICT_LICENSE](resources/CMUDICT_LICENSE)).
+- **[ONNX Runtime](https://onnxruntime.ai)** through the
+  [`ort`](https://github.com/pykeio/ort) crate.
 
 See [NOTICE](NOTICE).
